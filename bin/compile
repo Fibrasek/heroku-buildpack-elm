@@ -73,7 +73,7 @@ get_app_json_env() {
 
 ELM_COMPILE=$(get_app_json_env "ELM_COMPILE")
 echo "-----> Compiling with ${ELM_COMPILE}"
-${ELM_COMPILE} | indent
+# ${ELM_COMPILE} | indent
 
 # Copy package and compile artifacts back to cache
 cp -r ${build}/elm-stuff ${cache}/
